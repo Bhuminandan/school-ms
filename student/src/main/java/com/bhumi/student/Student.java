@@ -2,6 +2,7 @@ package com.bhumi.student;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 import org.springframework.data.annotation.AccessType;
@@ -13,6 +14,7 @@ import org.springframework.data.annotation.AccessType;
 @NoArgsConstructor
 @Builder
 @FieldDefaults(level = AccessLevel.PRIVATE)
+@Table(name = "student")
 public class Student {
 
     @Id
