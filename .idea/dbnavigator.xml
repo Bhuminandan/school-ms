@@ -6,7 +6,7 @@
   </component>
   <component name="DBNavigator.Project.DataEditorManager">
     <record-view-column-sorting-type value="BY_INDEX" />
-    <value-preview-text-wrapping value="true" />
+    <value-preview-text-wrapping value="false" />
     <value-preview-pinned value="false" />
   </component>
   <component name="DBNavigator.Project.DatabaseAssistantManager">
@@ -28,25 +28,24 @@
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="34d269c8-c3aa-45b6-8312-29b81412af47">
       <console name="Schoolms" type="STANDARD" schema="postgres" session="Main" />
+      <console name="Schools" type="STANDARD" schema="public" session="Main"><![CDATA[select * from school;]]></console>
     </connection>
     <connection id="b89b1af1-4509-47c1-9f49-8c1107358715">
-      <console name="SchooleMicro" type="STANDARD" schema="students" session="Main" />
+      <console name="SchooleMicro" type="STANDARD" schema="students" session="Main"><![CDATA[select * from students;]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
     <last-used-providers />
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
-    <open-files>
-      <object connection-id="34d269c8-c3aa-45b6-8312-29b81412af47" object-ref="schemas/public/tables/school" />
-    </open-files>
+    <open-files />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="34d269c8-c3aa-45b6-8312-29b81412af47" />
     <connection id="b89b1af1-4509-47c1-9f49-8c1107358715" />
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
-    <filter-actions connection-id="b89b1af1-4509-47c1-9f49-8c1107358715" dataset="public.student" active-filter-id="">
+    <filter-actions connection-id="b89b1af1-4509-47c1-9f49-8c1107358715" dataset="public.student" active-filter-id="EMPTY_FILTER">
       <filter id="b5b1b68d-6046-4076-adb6-f90c09f2439a" name="Filter" temporary="false" custom-name="false" type="basic" join-type="AND">
         <condition column="id" operator="=" value="" active="true" />
       </filter>
@@ -57,6 +56,9 @@
         <condition column="comments" operator="=" value="" active="true" />
       </filter>
     </filter-actions>
+  </component>
+  <component name="DBNavigator.Project.ExecutionManager">
+    <retain-sticky-names value="false" />
   </component>
   <component name="DBNavigator.Project.ObjectQuickFilterManager">
     <last-used-operator value="EQUAL" />
@@ -679,5 +681,9 @@
         </visibility-settings>
       </environment>
     </general-settings>
+  </component>
+  <component name="DBNavigator.Project.StatementExecutionManager">
+    <execution-variables />
+    <execution-variable-types />
   </component>
 </project>

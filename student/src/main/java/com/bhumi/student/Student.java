@@ -1,8 +1,6 @@
 package com.bhumi.student;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 import org.springframework.data.annotation.AccessType;
@@ -18,6 +16,7 @@ import org.springframework.data.annotation.AccessType;
 public class Student {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     Integer id;
     String firstName;
     String lastName;
